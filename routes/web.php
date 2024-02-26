@@ -17,6 +17,6 @@ $router->get('/', function () use ($router) {
     return $router->app->version();
 });
 
-$router->get('/users/$total', 'UserController@getTotalUsers');
-$router->get('/users/{userName}', 'UserController@getUserInfo');
+$router->get('/users/$total','UserController@getTotalUsers');
+$router->get('/users/{userName}','UserController@getUserInfo');
 $router->get('/users/', 'UserController@getAllUsers');
