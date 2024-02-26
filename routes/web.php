@@ -14,7 +14,7 @@
 */
 
 $router->get('/', function () use ($router) {
-    dd($_ENV);
+    dd(get_current_user(), $_ENV);
     return $router->app->version();
 });
 
