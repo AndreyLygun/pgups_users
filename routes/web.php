@@ -18,6 +18,6 @@ $router->get('/', function () use ($router) {
     return $router->app->version();
 });
 
-$router->get('/users/$total','UserController@getTotalUsers');
-$router->get('/users/{userName}','UserController@getUserInfo');
-$router->get('/users/', 'UserController@getAllUsers');
+$router->get('/users/$total','UserInfoController@getTotalUsers');
+$router->get('/users/{userName}','UserInfoController@getUserInfo');
+$router->get('/users/', 'UserInfoController@getAllUsers');
